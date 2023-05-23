@@ -1,16 +1,15 @@
-export const App = () => {
+import { Form, Title, Contacts, Filter } from './index';
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Title title="PhoneBook" />
+      <Form />
+      <Title title="Contacts" />
+      <Filter />
+      <Contacts />
     </div>
   );
 };
+
+export default App;
